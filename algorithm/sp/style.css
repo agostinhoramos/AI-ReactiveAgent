@@ -1,0 +1,177 @@
+#run{
+    display: inline-block;
+}
+.repeat {
+    background-color:rgba(255, 219, 119, 0.2);
+    -webkit-animation-name: delay;
+    -webkit-animation-duration: 5s;
+    animation-name: delay;
+    animation-duration: 5s;
+}
+@-webkit-keyframes delay {
+    from {background: transparent;}
+    to {background: rgba(30,144,255,0.5);}
+}
+@keyframes delay {
+    from {background: transparent;}
+    to {background: rgba(30,144,255,0.5);}
+}
+#DISPLAY td {
+    width: 35px;
+    height: 35px;
+    border: solid 1px rgb(0, 0, 0);
+    text-align: center;
+    color: #000;
+    font-size: 13px;
+}
+#DISPLAY[on-edit] td:hover {
+    border: solid 1px red;
+}
+#DISPLAY[on-edit] td:hover {
+    border-width: 1px 2px 2px 1px;
+    cursor: cell;
+}
+#DISPLAY td[repeat] {
+    background-color: #dee1e6;
+}
+#DISPLAY table{
+    margin: 0 auto;
+}
+
+#DISPLAY[on-edit] td:hover {
+    border: solid 1px red;
+}
+
+#DISPLAY[on-edit] td:hover {
+    border-width: 1px 2px 2px 1px;
+    cursor: cell;
+}
+
+.demo-step .tb{
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+    overflow-y: auto;
+    white-space: nowrap;
+    float: left;
+}
+.demo-step .athm{
+    position: relative;
+    width: 20%;
+    overflow: hidden;
+    overflow-y:auto;
+}
+.demo-step .tb,
+.demo-step .athm {
+    height: 250px;
+}
+
+.demo-step .athm p{
+    font-size: 10px;
+    margin:0;
+    margin-left: 20px;
+}
+
+.demo-step .athm p[active]{
+    font-size: 15px;
+    margin-left: 30px;
+    font-weight: bold;
+    color: tomato;
+}
+
+.demo-step td{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: none;
+    text-align: center;
+    color: #000;
+    font-size: 13px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.demo-step td[big]{
+    width: 65px;
+    height: 65px;
+    font-size: 30px;
+}
+
+.demo-step table{
+    margin: 0 1.5em 1.5em 0;
+    float: left;
+}
+.demo-step table:hover{
+    cursor: pointer;
+}
+
+.demo-step table td[x]  {
+    color:transparent;
+}
+
+.controllers {
+    margin-bottom: 10px;
+}
+
+.controllers button {
+    border: 0;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 3px;
+}
+
+.controllers button:nth-child(1)[active] {
+    background-color: #0d6b36;
+}
+
+.controllers button:nth-child(2)[active] {
+    background-color: #323232;
+}
+
+.controllers button:nth-child(3)[active] {
+    background-color: #f40000;
+}
+
+.controllers button:nth-child(4)[active] {
+    background-color: #007acc;
+}
+
+.obstacle {
+    background-color: #4e4e4e;
+}
+
+.start {
+    background-color: #0d6b36;
+    color: #f1f1f1 !important;
+}
+
+
+.demo-step td,.tmp_yes,.tmp_no{
+    border-radius: 15px;
+}
+.demo-step td[y],
+.tmp_yes {
+    background-color:#0d6b3680;
+    color: #fff;
+}
+
+.demo-step td[n],
+.tmp_no {
+    background-color:#f4000079;
+    color: #fff;
+}
+.demo-step table[active] td[y] {
+    background-color:#0d6b36;
+}
+.demo-step table[active] td[n]  {
+    background-color:#f40000;
+}
+
+.agent {
+    color:red !important;
+    font-size:16px !important;
+}
