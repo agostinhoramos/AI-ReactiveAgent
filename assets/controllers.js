@@ -34,8 +34,8 @@ $(document).ready(() => {
             INCLUDE.REMOVE();
             var name = $(this).val();
             if (name) {
-                INCLUDE.URL('/algorithm/' + name + '/script.min.js');
-                INCLUDE.URL('/algorithm/' + name + '/style.min.css');
+                INCLUDE.URL($.sys.root_url + 'algorithm/' + name + '/script.js');
+                INCLUDE.URL($.sys.root_url + 'algorithm/' + name + '/style.css');
                 Cookies.set('select', name);
             }
             DOM.refresh();
