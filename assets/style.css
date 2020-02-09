@@ -52,7 +52,11 @@ label[for="FormControlAlgorithm"] {
 }
 
 .github{
-    display: none;
+    opacity: 0.1;
+}
+
+.github:hover{
+    opacity: 1;
 }
 
 .github img {
