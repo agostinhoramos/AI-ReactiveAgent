@@ -1,4 +1,9 @@
 # Reactive Agent
+Programs used to run this code:
++ Visual Studio Code (install the Live Server plugin)
++ Google Chrome
+
+<img src="https://github.com/agostinhopina95/AI-ReactiveAgent/blob/master/assets/img/uUBtvmKSXY.gif?raw=true" height="200px" ></img>
 
 In contrast to a reactive agent, a deliberative agent maintains its internal state and predicts the effects of actions. Deliberative agents act more like thinking agents and search through a space of behaviors while maintaining their internal state. Reactive agents consume fewer system resources, which is why they cannot generate results that are as good as those from deliberative agents. Unlike reactive agents, deliberative agents cannot re-plan the actions quickly. It is entirely possible to use a few reactive agents in place of a deliberative agent in many cases.<br/>
 
