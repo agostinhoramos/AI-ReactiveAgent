@@ -66,14 +66,19 @@ $(document).ready(() => {
     $.input.algrth.change();
 });
 
+var tmp = 0;
 const DOM =  {
     refresh: function(){
-        $.panel.warp_disp.html('');
+        if( tmp > 2 ){ // seleções seguidas ; max 2
+			location.reload();
+		}
+		$.panel.warp_disp.html('');
         $.panel.warp_resl.html('');
         if( Cookies.get('page') !== Cookies.get('select') ){
             location.reload();
             Cookies.set('page', Cookies.get('select'));
         }
+		tmp += 1;
     }
 };
 
